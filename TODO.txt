@@ -1,1 +1,16 @@
-Adding TODO list just to keep track of chain of thoughts
+Build a simple landing page
+   Display generic home page information
+   Provide links to login and signup (or provide space to enter login info and a link to open signup page)
+
+Design/build authentication mechanism
+May be this is an opportunity to build the first API?
+API accesses via API keys?
+
+Start Database design 
+   As a first step design tables to store authentication (if going that route)
+   Design tables to store basic demographic/user info for registration
+
+Design log-database 
+
+Build logging infrastructure
+
