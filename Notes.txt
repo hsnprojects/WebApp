@@ -1,0 +1,12 @@
+Initial root folder structure
+
+WebApp
+├── API
+├── Database
+├── Middleware
+└── UI
+
+In order to add these empty folders to github we need to place .gitkeep to each empty folder:
+
+$find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \;
+
