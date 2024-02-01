@@ -1,12 +1,18 @@
 Initial root folder structure
 
 WebApp
-├── API
-├── Database
-├── Middleware
-└── UI
+├── API                      => API Services -> could use Middleware/Libraries/Business Rules etec
+├── Database                 => Database Access layer (if needed); Can contain interfaces to multiple interfaces (sqlite,mysql,postgres); SQL scripts to setup fresh database
+├── Middleware               => Main business rules - the real application, authentication mechanisms etc
+└── UI                       => UI componets and logic
+
+These can be split into multiple projects/repos if needed
 
 In order to add these empty folders to github we need to place .gitkeep to each empty folder:
 
 $find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \;
 
+Questions: 
+
+How does session handling works with next.js?
+How to host the application under a Web Server such as apache or nginx?
